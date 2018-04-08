@@ -1,3 +1,4 @@
+---
 - hosts: ios_devices
   connection: local
   gather_facts: False

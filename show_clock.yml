@@ -4,7 +4,6 @@
   connection: local
  
   tasks:
-
   - name: SYS | Define provider
     set_fact:
       provider:
