@@ -1,3 +1,3 @@
-# Ansible Lab
+# Ansible Lab (Cisco IOS)
 
-A collection of simple Ansible scripts for learning.
+A collection of simple Ansible scripts for Cisco IOS.
