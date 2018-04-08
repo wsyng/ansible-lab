@@ -1,0 +1,20 @@
+---
+- hosts: ios_devices
+  gather_facts: no
+  connection: local
+ 
+  tasks:
+
+  - name: SYS | Define provider
+    set_fact:
+      provider:
+        host: "{{ inventory_hostname }}"
+
+  - name: IOS | show clock
+    ios_command:
+      provider: "{{ provider }}"
+      commands:
+        - show clock
+    register: clock
+
+  - debug: msg="{{ clock.stdout }}"
