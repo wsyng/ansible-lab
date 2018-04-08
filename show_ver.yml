@@ -9,7 +9,7 @@
         provider:
           host: "{{ inventory_hostname }}"
 
-    - name: run show version
+    - name: IOS | show version
       ios_command:
         provider: "{{ provider }}"
         commands: show version | i Soft
